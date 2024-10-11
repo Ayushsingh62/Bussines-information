@@ -223,37 +223,65 @@ button{
 .image{
     display: flex;
 }
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
-    .box {
-        width: 90%;
-        height: auto;
-    }
-
-    .card-one {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .left-section,
-    .right-section {
+    .container{
         width: 100%;
+        height: auto;
         align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .box {
+        width: 100%; 
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+        margin-top: 20px; 
+    }
+    .third-input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+        position: relative;
+        svg{
+        position: absolute;
+        left: 110px;
+        top: 2px;
+        }
+    }
+
+    .right-section {
+        flex-direction: column;
+        width: 100%; 
+        margin-top: 20px; 
     }
 
     .left-section h1 {
-        text-align: center;
-        font-size: 32px;
+        font-size: 28px; 
+      
     }
 
     .left-section input {
-        width: 80%;
-        margin: 10px 0;
-    }
-
-    .right-section p {
-        text-align: center;
-        font-size: 16px;
+        width: 90%; 
+        margin-left: 0; 
     }
 
     .right-section button {
@@ -261,25 +289,64 @@ button{
     }
 
     .footer {
-        height: auto;
-        padding: 20px 0;
+        width: 100%;
+        height: auto; 
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+         
     }
 
     .footer-one {
-        flex-direction: column;
-        align-items: center;
+   width: 100%;
+   height: 500px;
+        display: flex;
+        flex-direction: column; 
+        
+        align-items: center; 
+        flex-wrap: wrap;
     }
 
-    .footer-one h1 {
-        text-align: center;
-    }
-
+ .ultag{
+   
+   width: 70%;
+   display: flex;
+   align-items: center;
+  flex-direction: row;
+    font-size: 12px;
+ 
+} 
+input{
+    height: 20px;
+    width: 20%;
+}
     .footer-two {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center; 
     }
 
     .footer-two h6 {
-        text-align: center;
+        margin-left: 0; 
     }
-}
+    
+     .ultag ul{
+       
+       input{
+        width: 130px;
+        height: 30px;
+       }
+       button{
+      display: none;
+       }
+    } 
+    
+     .image img {
+        height: 16px; 
+         width: 16px; 
+         margin-left: 20px;
+ } 
+} 
